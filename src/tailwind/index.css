@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* @config '../../tailwind.config.js'; */
+
+.social-icons-footer {
+    @apply p-3 rounded-full text-black bg-white hover:bg-orange-500 hover:fill-white;
+}

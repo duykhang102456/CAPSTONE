@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinwheel-tailwind</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/custom.css">
+</head>
+
+<body>
+
+    <header class="header relative">
+        <nav class="navbar container">
+            <!-- logo -->
+            <div class="order-0">
+                <a href="/index.html">
+                    <img src="../images/logo.svg" height="30" width="147" alt="logo" />
+                </a>
+            </div>
+            <!-- navbar toggler -->
+            <input id="nav-toggle" type="checkbox" class="hidden" />
+            <label id="show-button" for="nav-toggle"
+                class="order-1 flex cursor-pointer items-center lg:order-1 lg:hidden">
+                <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                    <title>Menu Open</title>
+                    <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+                </svg>
+            </label>
+            <label id="hide-button" for="nav-toggle" class="order-2 hidden cursor-pointer items-center lg:order-1">
+                <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                    <title>Menu Close</title>
+                    <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+                        transform="rotate(45 10 10)"></polygon>
+                </svg>
+            </label>
+            <!-- /navbar toggler -->
+            <ul id="nav-menu"
+                class="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../layout/blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../layout/features.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../layout/how-it-works.html" class="nav-link">How It
+                        Works</a>
+                </li>
+                <li class="nav-item nav-dropdown group relative">
+                    <span class="nav-link inline-flex items-center">
+                        Pages
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </span>
+                    <ul
+                        class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                        <li class="nav-dropdown-item">
+                            <a href="career.html" class="nav-dropdown-link">Career</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="career-single.html" class="nav-dropdown-link">Career Single</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="integrations.html" class="nav-dropdown-link">Integrations</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="integration-single.html" class="nav-dropdown-link">Integration Single</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="pricing.html" class="nav-dropdown-link">Pricing</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="changelogs.html" class="nav-dropdown-link">Changelogs</a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <a href="terms-conditions.html" class="nav-dropdown-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item mt-3.5 lg:hidden">
+                    <a class="btn btn-white btn-sm border-border" href="signin.html">Sing Up Now</a>
+                </li>
+            </ul>
+            <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
+                <a class="btn btn-white btn-sm" href="signin.html">Sing Up
+                    Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BACKGROUND -->
+    <img class="floating-bubble-1 absolute right-0 top-0 -z-[1]" src="../images/floating-bubble-1.svg" alt="">
+    <img class="floating-bubble-2 absolute left-0 top-[387px] -z-[1]" src="../images/floating-bubble-2.svg" alt="">
+    <img class="floating-bubble-3 absolute right-0 top-[605px] -z-[1]" src="../images/floating-bubble-3.svg" alt="">
+
+    <section class="page-hero pb-14 pt-4">
+        <div container class="pt-16 ml-auto mr-auto pl-[0.75rem] pr-[0.75rem]">
+            <div class="text-center">
+                <ul
+                    class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2">
+                    <li class="leading-none text-dark">
+                        <a class="inline-flex items-center text-primary" href="#">
+                            <svg class="mr-1.5" width="15" height="15" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.1769 15.0588H10.3533V9.41178H5.64744V15.0588H2.82391V6.58825H1.88274V16H14.118V6.58825H13.1769V15.0588ZM6.58862 15.0588V10.353H9.41215V15.0588H6.58862ZM15.8084 6.09225L15.2512 6.85178L8.00038 1.52472L0.749559 6.8499L0.192383 6.09131L8.00038 0.357666L15.8084 6.09225Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="text-sm leading-none">Home</span>
+                        </a>
+                    </li>
+                    <li class="leading-none text-dark">
+                        <span class="text-sm leading-none">/ How It
+                            Works</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container flex flex-col items-center justify-center pt-7 max-w-[883px]">
+                <h1 class="text-center w-[80%] ">Get’n touch with Our Pinwheel team</h1>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 relative">
+        <div class="container mx-auto flex flex-row lg:flex-row items-center justify-around">
+            <!-- Form Section -->
+            <div class="w-full md:w-1/2 max-w-lg">
+                <form class="space-y-6">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            placeholder="Your Full Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+                        />
+                    </div>
+
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Adrdess</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email Address"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+                        />
+                    </div>
+
+                    <!-- Reason/Purpose -->
+                    <div>
+                        <label for="reason" class="block text-sm font-medium text-gray-700 mb-1">reason/purpose</label>
+                        <select
+                            id="reason"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-gray-400"
+                        >
+                            <option value="Select reason/purpose">Select reason/purpose</option>
+                            <option value="Investment Plan">Investment Plan</option>
+                            <option value="Investment Plan 2">Investment Plan 2</option>
+                            <option value="Investment Plan 3">Investment Plan 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message Here</label>
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder=""
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button
+                            type="submit"
+                            class="w-full py-3 bg-gradient-to-r from-orange-400 to-pink-500 text-white font-medium rounded-full hover:from-orange-500 hover:to-pink-600 transition duration-200"
+                        >
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Image Section -->
+            <div class="lg:col-7 max-lg:order-1">
+                <div class="relative">
+                    <img
+                        src="../images/img_form.png"
+                        alt="Email Icon"
+                        class="w-64 md:w-80"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
